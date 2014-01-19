@@ -1,0 +1,225 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using NHibernate;
+using NHibernate.Cfg;
+using ClassLibrary;
+using System.Windows.Forms;
+using WorkLogForm.CommonClass;
+
+namespace WorkLogForm.Service
+{
+    class BaseService
+    {
+        public void saveEntity(IEntity entity)
+        {
+            if (entity.Id != 0)
+            {
+                throw new Exception("id不为空,应使用update方法");
+            }
+            ISessionFactory factory = Connection.Connection.getConfiguration().BuildSessionFactory();
+            ISession session = factory.OpenSession();
+            ITransaction transaction = session.BeginTransaction();
+            try
+            {
+                // Tell NHibernate that this object should be saved
+                session.Save(entity);
+                // commit all of the changes to the DB and close the ISession
+                transaction.Commit();
+                MessageBox.Show("保存成功");
+            }
+            catch(Exception e)
+            {
+                transaction.Rollback();
+                MessageBox.Show("保存失败:" + e.Message);
+            }
+            finally
+            {
+                session.Close();
+            }
+        }
+        public void deleteEntity(IEntity entity)
+        {
+            if (entity.Id == 0)
+            {
+                throw new Exception("id为空");
+            }
+            ISessionFactory factory = Connection.Connection.getConfiguration().BuildSessionFactory();
+            ISession session = factory.OpenSession();
+            ITransaction transaction = session.BeginTransaction();
+            // Tell NHibernate that this object should be deleted
+            try
+            {
+                session.Delete(entity);
+                // commit all of the changes to the DB and close the ISession
+                transaction.Commit();
+                MessageBox.Show("删除成功");
+            }
+            catch(Exception e)
+            {
+                transaction.Rollback();
+                MessageBox.Show("删除失败:" + e.Message);
+            }
+            finally
+            {
+                session.Close();
+            }
+        }
+        public void updateEntity(IEntity entity)
+        {
+            if (entity.Id == 0)
+            {
+                throw new Exception("id为空");
+            }
+            ISessionFactory factory = Connection.Connection.getConfiguration().BuildSessionFactory();
+            ISession session = factory.OpenSession();
+            ITransaction transaction = session.BeginTransaction();
+            // Tell NHibernate that this object should be updated
+            try
+            {
+                session.Update(entity);
+                // commit all of the changes to the DB and close the ISession
+                transaction.Commit();
+                MessageBox.Show("更新成功");
+            }
+            catch (Exception e)
+            {
+                transaction.Rollback();
+                MessageBox.Show("更新失败:"+e.Message);
+            }
+            finally
+            {
+                session.Close();
+            }
+        }
+        public IEntity loadEntity(IEntity entity,long id)
+        {
+            if (id == 0)
+            {
+                throw new Exception("id为空");
+            }
+            ISessionFactory factory = Connection.Connection.getConfiguration().BuildSessionFactory();
+            ISession session = factory.OpenSession();
+            ITransaction transaction = session.BeginTransaction();
+            session.Load(entity, id);
+            session.Close();
+            return entity;
+        }
+        /// <summary>
+        /// 查询实体List
+        /// </summary>
+        /// <param name="entityNames">实体名称字符串数组</param>
+        /// <param name="colAndValue">查询条件二维数组.0为实体名称，1为属性名称，2为属性类型是否为字符串，3为属性值.
+        /// 例：new string[,]{{"Course","CourseName",CommonStaticParameter.IS_STRING,"aaa"}}</param>
+        /// <returns>查询多个实体的时候返回Object[]的List,查询单个实体的时候返回实体对象数组</returns>
+        public ArrayList loadEntityList(List<string> entityNames,string[,] colAndValue)
+        {
+            try
+            {
+                ISessionFactory factory = Connection.Connection.getConfiguration().BuildSessionFactory();
+                ISession session = factory.OpenSession();
+                ITransaction trans = session.BeginTransaction();
+                if (entityNames.Count <= 0)
+                {
+                    MessageBox.Show("实体名称数不能为0！");
+                    return null;
+                }
+                StringBuilder sql = new StringBuilder("select ").Append("{").Append(entityNames[0]).Append(".*}");
+                for (int i = 1; i < entityNames.Count; i++)
+                {
+                    sql.Append(",{").Append(entityNames[i]).Append(".*}");
+                }
+                sql.Append(" from ").Append(entityNames[0]);
+                for (int i = 1; i < entityNames.Count; i++)
+                {
+                    sql.Append(",").Append(entityNames[i]);
+                }
+                if (colAndValue.Length >= 4)
+                {
+                    sql.Append(" where ");
+                    if (colAndValue[0, 0].Equals(""))
+                    {
+                        sql.Append(colAndValue[0, 0]).Append(".");
+                    }
+                    sql.Append(colAndValue[0, 1]).Append("=");
+                    if (colAndValue[0, 2].Equals(CommonStaticParameter.IS_STRING))
+                    {
+                        sql.Append("'").Append(colAndValue[0, 3]).Append("'");
+                    }
+                    else if (colAndValue[0, 2].Equals(CommonStaticParameter.IS_NOT_STRING))
+                    {
+                        sql.Append(colAndValue[0, 3]);
+                    }
+                    for (int i = 0; i < (colAndValue.Length / 4); i++)
+                    {
+                        sql.Append(" and ");
+                        if (!colAndValue[i, 0].Equals(""))
+                        {
+                            sql.Append(colAndValue[i, 0]).Append(".");
+                        }
+                        sql.Append(colAndValue[i, 1]).Append("=");
+                        if (colAndValue[i, 2].Equals(CommonStaticParameter.IS_STRING))
+                        {
+                            sql.Append("'").Append(colAndValue[i, 3]).Append("'");
+                        }
+                        else if (colAndValue[i, 2].Equals(CommonStaticParameter.IS_NOT_STRING))
+                        {
+                            sql.Append(colAndValue[i, 3]);
+                        }
+                    }
+                }
+                ISQLQuery query = session.CreateSQLQuery(sql.ToString());
+                for (int i = 0; i < entityNames.Count; i++)
+                {
+                    query.AddEntity("ClassLibrary." + entityNames[i]);
+                }
+                ArrayList list = (ArrayList)query.List();
+                return list;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                return null;
+            }
+        }
+        public ArrayList loadEntityList(List<string> entityNames,string sql)
+        {
+            try
+            {
+                ISessionFactory factory = Connection.Connection.getConfiguration().BuildSessionFactory();
+                ISession session = factory.OpenSession();
+                ITransaction trans = session.BeginTransaction();
+                ISQLQuery query = session.CreateSQLQuery(sql);
+                for (int i = 0; i < entityNames.Count; i++)
+                {
+                    query.AddEntity("ClassLibrary." + entityNames[i]);
+                }
+                ArrayList list = (ArrayList)query.List();
+                return list;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                return null;
+            }
+        }
+        public ISQLQuery loadEntityList(string sql)
+        {
+            try
+            {
+                ISessionFactory factory = Connection.Connection.getConfiguration().BuildSessionFactory();
+                ISession session = factory.OpenSession();
+                ITransaction trans = session.BeginTransaction();
+                ISQLQuery query = session.CreateSQLQuery(sql);
+                return query;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                return null;
+            }
+        } 
+    }
+}

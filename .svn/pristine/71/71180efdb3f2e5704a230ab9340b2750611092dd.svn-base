@@ -1,0 +1,111 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using NHibernate;
+using NHibernate.Cfg;
+using ClassLibrary;
+using System.Windows.Forms;
+
+namespace WorkLogForm.Service
+{
+    class BaseService
+    {
+        public void saveEntity(IEntity entity)
+        {
+            if (entity.Id != 0)
+            {
+                throw new Exception("id不为空,应使用update方法");
+            }
+            ISessionFactory factory = Connection.Connection.getConfiguration().BuildSessionFactory();
+            ISession session = factory.OpenSession();
+            ITransaction transaction = session.BeginTransaction();
+            try
+            {
+                // Tell NHibernate that this object should be saved
+                session.Save(entity);
+                // commit all of the changes to the DB and close the ISession
+                transaction.Commit();
+                MessageBox.Show("保存成功");
+            }
+            catch(Exception e)
+            {
+                transaction.Rollback();
+                MessageBox.Show("保存失败:" + e.Message);
+            }
+            finally
+            {
+                session.Close();
+            }
+        }
+        public void deleteEntity(IEntity entity)
+        {
+            if (entity.Id == 0)
+            {
+                throw new Exception("id为空");
+            }
+            ISessionFactory factory = Connection.Connection.getConfiguration().BuildSessionFactory();
+            ISession session = factory.OpenSession();
+            ITransaction transaction = session.BeginTransaction();
+            // Tell NHibernate that this object should be deleted
+            try
+            {
+                session.Delete(entity);
+                // commit all of the changes to the DB and close the ISession
+                transaction.Commit();
+                MessageBox.Show("删除成功");
+            }
+            catch(Exception e)
+            {
+                transaction.Rollback();
+                MessageBox.Show("删除失败:" + e.Message);
+            }
+            finally
+            {
+                session.Close();
+            }
+        }
+        public void updateEntity(IEntity entity)
+        {
+            if (entity.Id == 0)
+            {
+                throw new Exception("id为空");
+            }
+            ISessionFactory factory = Connection.Connection.getConfiguration().BuildSessionFactory();
+            ISession session = factory.OpenSession();
+            ITransaction transaction = session.BeginTransaction();
+            // Tell NHibernate that this object should be updated
+            try
+            {
+                session.Update(entity);
+                // commit all of the changes to the DB and close the ISession
+                transaction.Commit();
+                MessageBox.Show("更新成功");
+            }
+            catch (Exception e)
+            {
+                transaction.Rollback();
+                MessageBox.Show("更新失败:"+e.Message);
+            }
+            finally
+            {
+                session.Close();
+            }
+        }
+        public IEntity loadEntity(IEntity entity,long id)
+        {
+            if (id == 0)
+            {
+                throw new Exception("id为空");
+            }
+            ISessionFactory factory = Connection.Connection.getConfiguration().BuildSessionFactory();
+            ISession session = factory.OpenSession();
+            ITransaction transaction = session.BeginTransaction();
+            // Tell NHibernate that this object should be load
+            session.Load(entity, id);
+            // commit all of the changes to the DB and close the ISession
+            session.Close();
+            return entity;
+        }
+    }
+}

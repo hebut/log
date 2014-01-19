@@ -1,0 +1,1200 @@
+﻿namespace WorkLogForm
+{
+    partial class shou_ye
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(shou_ye));
+            this.comboItem12 = new DevComponents.Editors.ComboItem();
+            this.comboItem11 = new DevComponents.Editors.ComboItem();
+            this.comboItem10 = new DevComponents.Editors.ComboItem();
+            this.comboItem9 = new DevComponents.Editors.ComboItem();
+            this.comboItem8 = new DevComponents.Editors.ComboItem();
+            this.comboItem7 = new DevComponents.Editors.ComboItem();
+            this.comboItem6 = new DevComponents.Editors.ComboItem();
+            this.comboItem5 = new DevComponents.Editors.ComboItem();
+            this.comboItem4 = new DevComponents.Editors.ComboItem();
+            this.comboItem3 = new DevComponents.Editors.ComboItem();
+            this.comboItem2 = new DevComponents.Editors.ComboItem();
+            this.comboItem1 = new DevComponents.Editors.ComboItem();
+            this.comboItem17 = new DevComponents.Editors.ComboItem();
+            this.comboItem16 = new DevComponents.Editors.ComboItem();
+            this.comboItem15 = new DevComponents.Editors.ComboItem();
+            this.comboItem14 = new DevComponents.Editors.ComboItem();
+            this.comboItem13 = new DevComponents.Editors.ComboItem();
+            this.panel_base = new System.Windows.Forms.Panel();
+            this.panel_right = new System.Windows.Forms.Panel();
+            this.panel_calendar = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.saturday = new System.Windows.Forms.Label();
+            this.friday = new System.Windows.Forms.Label();
+            this.thursday = new System.Windows.Forms.Label();
+            this.wednesday = new System.Windows.Forms.Label();
+            this.tuesday = new System.Windows.Forms.Label();
+            this.monday = new System.Windows.Forms.Label();
+            this.sunday = new System.Windows.Forms.Label();
+            this.year_comboBoxEx = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.comboItem30 = new DevComponents.Editors.ComboItem();
+            this.comboItem31 = new DevComponents.Editors.ComboItem();
+            this.comboItem32 = new DevComponents.Editors.ComboItem();
+            this.comboItem33 = new DevComponents.Editors.ComboItem();
+            this.comboItem34 = new DevComponents.Editors.ComboItem();
+            this.month_comboBoxEx = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.comboItem35 = new DevComponents.Editors.ComboItem();
+            this.comboItem36 = new DevComponents.Editors.ComboItem();
+            this.comboItem37 = new DevComponents.Editors.ComboItem();
+            this.comboItem38 = new DevComponents.Editors.ComboItem();
+            this.comboItem39 = new DevComponents.Editors.ComboItem();
+            this.comboItem40 = new DevComponents.Editors.ComboItem();
+            this.comboItem41 = new DevComponents.Editors.ComboItem();
+            this.comboItem42 = new DevComponents.Editors.ComboItem();
+            this.comboItem43 = new DevComponents.Editors.ComboItem();
+            this.comboItem44 = new DevComponents.Editors.ComboItem();
+            this.comboItem45 = new DevComponents.Editors.ComboItem();
+            this.comboItem46 = new DevComponents.Editors.ComboItem();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.rectangleShape34 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape33 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape32 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape31 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape30 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape29 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape28 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape27 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape26 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape25 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape24 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape23 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape22 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape21 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape20 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape19 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape18 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape17 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape16 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape15 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape14 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape13 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape12 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape11 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape10 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape9 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape8 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape7 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape6 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape5 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape4 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape0_1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.calendar_ovalShape_right = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.calendar_ovalShape_left = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.panel_top = new System.Windows.Forms.Panel();
+            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.rectangleShape41 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape40 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape39 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape38 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape37 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape36 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape35 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
+            this.comboItem29 = new DevComponents.Editors.ComboItem();
+            this.comboItem28 = new DevComponents.Editors.ComboItem();
+            this.comboItem27 = new DevComponents.Editors.ComboItem();
+            this.comboItem26 = new DevComponents.Editors.ComboItem();
+            this.comboItem25 = new DevComponents.Editors.ComboItem();
+            this.comboItem24 = new DevComponents.Editors.ComboItem();
+            this.comboItem23 = new DevComponents.Editors.ComboItem();
+            this.comboItem22 = new DevComponents.Editors.ComboItem();
+            this.comboItem21 = new DevComponents.Editors.ComboItem();
+            this.comboItem20 = new DevComponents.Editors.ComboItem();
+            this.comboItem19 = new DevComponents.Editors.ComboItem();
+            this.comboItem18 = new DevComponents.Editors.ComboItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel_base.SuspendLayout();
+            this.panel_calendar.SuspendLayout();
+            this.panel_top.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // comboItem12
+            // 
+            this.comboItem12.Text = "十二月";
+            // 
+            // comboItem11
+            // 
+            this.comboItem11.Text = "十一月";
+            // 
+            // comboItem10
+            // 
+            this.comboItem10.Text = "十月";
+            // 
+            // comboItem9
+            // 
+            this.comboItem9.Text = "九月";
+            // 
+            // comboItem8
+            // 
+            this.comboItem8.Text = "八月";
+            // 
+            // comboItem7
+            // 
+            this.comboItem7.Text = "七月";
+            // 
+            // comboItem6
+            // 
+            this.comboItem6.Text = "六月";
+            // 
+            // comboItem5
+            // 
+            this.comboItem5.Text = "五月";
+            // 
+            // comboItem4
+            // 
+            this.comboItem4.Text = "四月";
+            // 
+            // comboItem3
+            // 
+            this.comboItem3.Text = "三月";
+            // 
+            // comboItem2
+            // 
+            this.comboItem2.Text = "二月";
+            // 
+            // comboItem1
+            // 
+            this.comboItem1.Text = "一月";
+            // 
+            // comboItem17
+            // 
+            this.comboItem17.Text = "2015";
+            // 
+            // comboItem16
+            // 
+            this.comboItem16.Text = "2014";
+            // 
+            // comboItem15
+            // 
+            this.comboItem15.Text = "2013";
+            // 
+            // comboItem14
+            // 
+            this.comboItem14.Text = "2012";
+            // 
+            // comboItem13
+            // 
+            this.comboItem13.Text = "2011";
+            // 
+            // panel_base
+            // 
+            this.panel_base.BackColor = System.Drawing.Color.Transparent;
+            this.panel_base.Controls.Add(this.panel_right);
+            this.panel_base.Controls.Add(this.panel_calendar);
+            this.panel_base.Location = new System.Drawing.Point(10, 120);
+            this.panel_base.Name = "panel_base";
+            this.panel_base.Size = new System.Drawing.Size(1010, 530);
+            this.panel_base.TabIndex = 3;
+            // 
+            // panel_right
+            // 
+            this.panel_right.BackColor = System.Drawing.Color.Transparent;
+            this.panel_right.BackgroundImage = global::WorkLogForm.Properties.Resources.侧边栏背景;
+            this.panel_right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_right.Location = new System.Drawing.Point(4, 0);
+            this.panel_right.Name = "panel_right";
+            this.panel_right.Size = new System.Drawing.Size(200, 529);
+            this.panel_right.TabIndex = 4;
+            // 
+            // panel_calendar
+            // 
+            this.panel_calendar.BackColor = System.Drawing.SystemColors.Control;
+            this.panel_calendar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_calendar.BackgroundImage")));
+            this.panel_calendar.Controls.Add(this.label6);
+            this.panel_calendar.Controls.Add(this.label2);
+            this.panel_calendar.Controls.Add(this.label5);
+            this.panel_calendar.Controls.Add(this.label4);
+            this.panel_calendar.Controls.Add(this.label3);
+            this.panel_calendar.Controls.Add(this.label1);
+            this.panel_calendar.Controls.Add(this.saturday);
+            this.panel_calendar.Controls.Add(this.friday);
+            this.panel_calendar.Controls.Add(this.thursday);
+            this.panel_calendar.Controls.Add(this.wednesday);
+            this.panel_calendar.Controls.Add(this.tuesday);
+            this.panel_calendar.Controls.Add(this.monday);
+            this.panel_calendar.Controls.Add(this.sunday);
+            this.panel_calendar.Controls.Add(this.year_comboBoxEx);
+            this.panel_calendar.Controls.Add(this.month_comboBoxEx);
+            this.panel_calendar.Controls.Add(this.shapeContainer1);
+            this.panel_calendar.Location = new System.Drawing.Point(210, 0);
+            this.panel_calendar.Name = "panel_calendar";
+            this.panel_calendar.Size = new System.Drawing.Size(795, 530);
+            this.panel_calendar.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(418, 183);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(21, 14);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "12";
+            // 
+            // saturday
+            // 
+            this.saturday.AutoSize = true;
+            this.saturday.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.saturday.Location = new System.Drawing.Point(693, 62);
+            this.saturday.Name = "saturday";
+            this.saturday.Size = new System.Drawing.Size(69, 20);
+            this.saturday.TabIndex = 11;
+            this.saturday.Text = "星期六";
+            // 
+            // friday
+            // 
+            this.friday.AutoSize = true;
+            this.friday.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.friday.Location = new System.Drawing.Point(585, 61);
+            this.friday.Name = "friday";
+            this.friday.Size = new System.Drawing.Size(69, 20);
+            this.friday.TabIndex = 10;
+            this.friday.Text = "星期五";
+            // 
+            // thursday
+            // 
+            this.thursday.AutoSize = true;
+            this.thursday.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.thursday.Location = new System.Drawing.Point(475, 61);
+            this.thursday.Name = "thursday";
+            this.thursday.Size = new System.Drawing.Size(69, 20);
+            this.thursday.TabIndex = 9;
+            this.thursday.Text = "星期四";
+            // 
+            // wednesday
+            // 
+            this.wednesday.AutoSize = true;
+            this.wednesday.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.wednesday.Location = new System.Drawing.Point(370, 61);
+            this.wednesday.Name = "wednesday";
+            this.wednesday.Size = new System.Drawing.Size(69, 20);
+            this.wednesday.TabIndex = 8;
+            this.wednesday.Text = "星期三";
+            // 
+            // tuesday
+            // 
+            this.tuesday.AutoSize = true;
+            this.tuesday.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tuesday.Location = new System.Drawing.Point(255, 62);
+            this.tuesday.Name = "tuesday";
+            this.tuesday.Size = new System.Drawing.Size(69, 20);
+            this.tuesday.TabIndex = 7;
+            this.tuesday.Text = "星期二";
+            // 
+            // monday
+            // 
+            this.monday.AutoSize = true;
+            this.monday.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.monday.Location = new System.Drawing.Point(152, 61);
+            this.monday.Name = "monday";
+            this.monday.Size = new System.Drawing.Size(69, 20);
+            this.monday.TabIndex = 6;
+            this.monday.Text = "星期一";
+            // 
+            // sunday
+            // 
+            this.sunday.AutoSize = true;
+            this.sunday.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sunday.Location = new System.Drawing.Point(41, 62);
+            this.sunday.Name = "sunday";
+            this.sunday.Size = new System.Drawing.Size(69, 20);
+            this.sunday.TabIndex = 5;
+            this.sunday.Text = "星期日";
+            // 
+            // year_comboBoxEx
+            // 
+            this.year_comboBoxEx.DisplayMember = "Text";
+            this.year_comboBoxEx.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.year_comboBoxEx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.year_comboBoxEx.FormattingEnabled = true;
+            this.year_comboBoxEx.ItemHeight = 15;
+            this.year_comboBoxEx.Items.AddRange(new object[] {
+            this.comboItem30,
+            this.comboItem31,
+            this.comboItem32,
+            this.comboItem33,
+            this.comboItem34});
+            this.year_comboBoxEx.Location = new System.Drawing.Point(118, 19);
+            this.year_comboBoxEx.Name = "year_comboBoxEx";
+            this.year_comboBoxEx.Size = new System.Drawing.Size(56, 21);
+            this.year_comboBoxEx.TabIndex = 4;
+            // 
+            // comboItem30
+            // 
+            this.comboItem30.Text = "2012";
+            // 
+            // comboItem31
+            // 
+            this.comboItem31.Text = "2013";
+            // 
+            // comboItem32
+            // 
+            this.comboItem32.Text = "2014";
+            // 
+            // comboItem33
+            // 
+            this.comboItem33.Text = "2015";
+            // 
+            // comboItem34
+            // 
+            this.comboItem34.Text = "2016";
+            // 
+            // month_comboBoxEx
+            // 
+            this.month_comboBoxEx.DisplayMember = "Text";
+            this.month_comboBoxEx.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.month_comboBoxEx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.month_comboBoxEx.FormattingEnabled = true;
+            this.month_comboBoxEx.ItemHeight = 15;
+            this.month_comboBoxEx.Items.AddRange(new object[] {
+            this.comboItem35,
+            this.comboItem36,
+            this.comboItem37,
+            this.comboItem38,
+            this.comboItem39,
+            this.comboItem40,
+            this.comboItem41,
+            this.comboItem42,
+            this.comboItem43,
+            this.comboItem44,
+            this.comboItem45,
+            this.comboItem46});
+            this.month_comboBoxEx.Location = new System.Drawing.Point(51, 19);
+            this.month_comboBoxEx.Name = "month_comboBoxEx";
+            this.month_comboBoxEx.Size = new System.Drawing.Size(60, 21);
+            this.month_comboBoxEx.TabIndex = 3;
+            // 
+            // comboItem35
+            // 
+            this.comboItem35.Text = "一月";
+            // 
+            // comboItem36
+            // 
+            this.comboItem36.Text = "二月";
+            // 
+            // comboItem37
+            // 
+            this.comboItem37.Text = "三月";
+            // 
+            // comboItem38
+            // 
+            this.comboItem38.Text = "四月";
+            // 
+            // comboItem39
+            // 
+            this.comboItem39.Text = "五月";
+            // 
+            // comboItem40
+            // 
+            this.comboItem40.Text = "六月";
+            // 
+            // comboItem41
+            // 
+            this.comboItem41.Text = "七月";
+            // 
+            // comboItem42
+            // 
+            this.comboItem42.Text = "八月";
+            // 
+            // comboItem43
+            // 
+            this.comboItem43.Text = "九月";
+            // 
+            // comboItem44
+            // 
+            this.comboItem44.Text = "十月";
+            // 
+            // comboItem45
+            // 
+            this.comboItem45.Text = "十一月";
+            // 
+            // comboItem46
+            // 
+            this.comboItem46.Text = "十二月";
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape34,
+            this.rectangleShape33,
+            this.rectangleShape32,
+            this.rectangleShape31,
+            this.rectangleShape30,
+            this.rectangleShape29,
+            this.rectangleShape28,
+            this.rectangleShape27,
+            this.rectangleShape26,
+            this.rectangleShape25,
+            this.rectangleShape24,
+            this.rectangleShape23,
+            this.rectangleShape22,
+            this.rectangleShape21,
+            this.rectangleShape20,
+            this.rectangleShape19,
+            this.rectangleShape18,
+            this.rectangleShape17,
+            this.rectangleShape16,
+            this.rectangleShape15,
+            this.rectangleShape14,
+            this.rectangleShape13,
+            this.rectangleShape12,
+            this.rectangleShape11,
+            this.rectangleShape10,
+            this.rectangleShape9,
+            this.rectangleShape8,
+            this.rectangleShape7,
+            this.rectangleShape6,
+            this.rectangleShape5,
+            this.rectangleShape4,
+            this.rectangleShape3,
+            this.rectangleShape2,
+            this.rectangleShape1,
+            this.rectangleShape0_1,
+            this.calendar_ovalShape_right,
+            this.calendar_ovalShape_left});
+            this.shapeContainer1.Size = new System.Drawing.Size(795, 530);
+            this.shapeContainer1.TabIndex = 2;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // rectangleShape34
+            // 
+            this.rectangleShape34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape34.BackgroundImage")));
+            this.rectangleShape34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape34.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape34.Location = new System.Drawing.Point(13, 347);
+            this.rectangleShape34.Name = "rectangleShape34";
+            this.rectangleShape34.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape33
+            // 
+            this.rectangleShape33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape33.BackgroundImage")));
+            this.rectangleShape33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape33.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape33.Location = new System.Drawing.Point(123, 347);
+            this.rectangleShape33.Name = "rectangleShape33";
+            this.rectangleShape33.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape32
+            // 
+            this.rectangleShape32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape32.BackgroundImage")));
+            this.rectangleShape32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape32.Location = new System.Drawing.Point(233, 347);
+            this.rectangleShape32.Name = "rectangleShape32";
+            this.rectangleShape32.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape31
+            // 
+            this.rectangleShape31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape31.BackgroundImage")));
+            this.rectangleShape31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape31.Location = new System.Drawing.Point(343, 347);
+            this.rectangleShape31.Name = "rectangleShape31";
+            this.rectangleShape31.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape30
+            // 
+            this.rectangleShape30.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape30.BackgroundImage")));
+            this.rectangleShape30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape30.Location = new System.Drawing.Point(563, 347);
+            this.rectangleShape30.Name = "rectangleShape30";
+            this.rectangleShape30.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape29
+            // 
+            this.rectangleShape29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape29.BackgroundImage")));
+            this.rectangleShape29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape29.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape29.Location = new System.Drawing.Point(453, 347);
+            this.rectangleShape29.Name = "rectangleShape29";
+            this.rectangleShape29.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape28
+            // 
+            this.rectangleShape28.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape28.BackgroundImage")));
+            this.rectangleShape28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape28.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape28.Location = new System.Drawing.Point(673, 347);
+            this.rectangleShape28.Name = "rectangleShape28";
+            this.rectangleShape28.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape27
+            // 
+            this.rectangleShape27.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape27.BackgroundImage")));
+            this.rectangleShape27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape27.Location = new System.Drawing.Point(673, 432);
+            this.rectangleShape27.Name = "rectangleShape27";
+            this.rectangleShape27.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape26
+            // 
+            this.rectangleShape26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape26.BackgroundImage")));
+            this.rectangleShape26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape26.Location = new System.Drawing.Point(453, 432);
+            this.rectangleShape26.Name = "rectangleShape26";
+            this.rectangleShape26.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape25
+            // 
+            this.rectangleShape25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape25.BackgroundImage")));
+            this.rectangleShape25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape25.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape25.Location = new System.Drawing.Point(563, 432);
+            this.rectangleShape25.Name = "rectangleShape25";
+            this.rectangleShape25.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape24
+            // 
+            this.rectangleShape24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape24.BackgroundImage")));
+            this.rectangleShape24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape24.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape24.Location = new System.Drawing.Point(343, 432);
+            this.rectangleShape24.Name = "rectangleShape24";
+            this.rectangleShape24.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape23
+            // 
+            this.rectangleShape23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape23.BackgroundImage")));
+            this.rectangleShape23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape23.Location = new System.Drawing.Point(233, 432);
+            this.rectangleShape23.Name = "rectangleShape23";
+            this.rectangleShape23.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape22
+            // 
+            this.rectangleShape22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape22.BackgroundImage")));
+            this.rectangleShape22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape22.Location = new System.Drawing.Point(123, 432);
+            this.rectangleShape22.Name = "rectangleShape22";
+            this.rectangleShape22.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape21
+            // 
+            this.rectangleShape21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape21.BackgroundImage")));
+            this.rectangleShape21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape21.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape21.Location = new System.Drawing.Point(13, 432);
+            this.rectangleShape21.Name = "rectangleShape21";
+            this.rectangleShape21.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape20
+            // 
+            this.rectangleShape20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape20.BackgroundImage")));
+            this.rectangleShape20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape20.Location = new System.Drawing.Point(13, 264);
+            this.rectangleShape20.Name = "rectangleShape20";
+            this.rectangleShape20.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape19
+            // 
+            this.rectangleShape19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape19.BackgroundImage")));
+            this.rectangleShape19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape19.Location = new System.Drawing.Point(123, 264);
+            this.rectangleShape19.Name = "rectangleShape19";
+            this.rectangleShape19.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape18
+            // 
+            this.rectangleShape18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape18.BackgroundImage")));
+            this.rectangleShape18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape18.Location = new System.Drawing.Point(233, 264);
+            this.rectangleShape18.Name = "rectangleShape18";
+            this.rectangleShape18.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape17
+            // 
+            this.rectangleShape17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape17.BackgroundImage")));
+            this.rectangleShape17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape17.Location = new System.Drawing.Point(343, 264);
+            this.rectangleShape17.Name = "rectangleShape17";
+            this.rectangleShape17.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape16
+            // 
+            this.rectangleShape16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape16.BackgroundImage")));
+            this.rectangleShape16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape16.Location = new System.Drawing.Point(563, 264);
+            this.rectangleShape16.Name = "rectangleShape16";
+            this.rectangleShape16.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape15
+            // 
+            this.rectangleShape15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape15.BackgroundImage")));
+            this.rectangleShape15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape15.Location = new System.Drawing.Point(453, 264);
+            this.rectangleShape15.Name = "rectangleShape15";
+            this.rectangleShape15.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape14
+            // 
+            this.rectangleShape14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape14.BackgroundImage")));
+            this.rectangleShape14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape14.Location = new System.Drawing.Point(673, 264);
+            this.rectangleShape14.Name = "rectangleShape14";
+            this.rectangleShape14.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape13
+            // 
+            this.rectangleShape13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape13.BackgroundImage")));
+            this.rectangleShape13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape13.Location = new System.Drawing.Point(13, 179);
+            this.rectangleShape13.Name = "rectangleShape13";
+            this.rectangleShape13.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape12
+            // 
+            this.rectangleShape12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape12.BackgroundImage")));
+            this.rectangleShape12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape12.Location = new System.Drawing.Point(123, 179);
+            this.rectangleShape12.Name = "rectangleShape12";
+            this.rectangleShape12.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape11
+            // 
+            this.rectangleShape11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape11.BackgroundImage")));
+            this.rectangleShape11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape11.Location = new System.Drawing.Point(233, 179);
+            this.rectangleShape11.Name = "rectangleShape11";
+            this.rectangleShape11.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape10
+            // 
+            this.rectangleShape10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape10.BackgroundImage")));
+            this.rectangleShape10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape10.Location = new System.Drawing.Point(343, 179);
+            this.rectangleShape10.Name = "rectangleShape10";
+            this.rectangleShape10.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape9
+            // 
+            this.rectangleShape9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape9.BackgroundImage")));
+            this.rectangleShape9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape9.Location = new System.Drawing.Point(563, 179);
+            this.rectangleShape9.Name = "rectangleShape9";
+            this.rectangleShape9.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape8
+            // 
+            this.rectangleShape8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape8.BackgroundImage")));
+            this.rectangleShape8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape8.Location = new System.Drawing.Point(453, 179);
+            this.rectangleShape8.Name = "rectangleShape8";
+            this.rectangleShape8.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape7
+            // 
+            this.rectangleShape7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape7.BackgroundImage")));
+            this.rectangleShape7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape7.Location = new System.Drawing.Point(673, 179);
+            this.rectangleShape7.Name = "rectangleShape7";
+            this.rectangleShape7.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape6
+            // 
+            this.rectangleShape6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape6.BackgroundImage")));
+            this.rectangleShape6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape6.Location = new System.Drawing.Point(673, 94);
+            this.rectangleShape6.Name = "rectangleShape6";
+            this.rectangleShape6.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape5
+            // 
+            this.rectangleShape5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape5.BackgroundImage")));
+            this.rectangleShape5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape5.Location = new System.Drawing.Point(453, 94);
+            this.rectangleShape5.Name = "rectangleShape5";
+            this.rectangleShape5.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape4
+            // 
+            this.rectangleShape4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape4.BackgroundImage")));
+            this.rectangleShape4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape4.Location = new System.Drawing.Point(563, 94);
+            this.rectangleShape4.Name = "rectangleShape4";
+            this.rectangleShape4.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape3
+            // 
+            this.rectangleShape3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape3.BackgroundImage")));
+            this.rectangleShape3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape3.Location = new System.Drawing.Point(343, 94);
+            this.rectangleShape3.Name = "rectangleShape3";
+            this.rectangleShape3.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape2
+            // 
+            this.rectangleShape2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape2.BackgroundImage")));
+            this.rectangleShape2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape2.Location = new System.Drawing.Point(233, 94);
+            this.rectangleShape2.Name = "rectangleShape2";
+            this.rectangleShape2.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape1
+            // 
+            this.rectangleShape1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape1.BackgroundImage")));
+            this.rectangleShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape1.Location = new System.Drawing.Point(123, 94);
+            this.rectangleShape1.Name = "rectangleShape1";
+            this.rectangleShape1.Size = new System.Drawing.Size(110, 85);
+            // 
+            // rectangleShape0_1
+            // 
+            this.rectangleShape0_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape0_1.BackgroundImage")));
+            this.rectangleShape0_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape0_1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape0_1.Location = new System.Drawing.Point(13, 94);
+            this.rectangleShape0_1.Name = "rectangleShape0_1";
+            this.rectangleShape0_1.Size = new System.Drawing.Size(110, 85);
+            // 
+            // calendar_ovalShape_right
+            // 
+            this.calendar_ovalShape_right.BackgroundImage = global::WorkLogForm.Properties.Resources.右箭头;
+            this.calendar_ovalShape_right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.calendar_ovalShape_right.BorderColor = System.Drawing.Color.Transparent;
+            this.calendar_ovalShape_right.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.calendar_ovalShape_right.Location = new System.Drawing.Point(180, 16);
+            this.calendar_ovalShape_right.Name = "calendar_ovalShape_right";
+            this.calendar_ovalShape_right.Size = new System.Drawing.Size(25, 25);
+            // 
+            // calendar_ovalShape_left
+            // 
+            this.calendar_ovalShape_left.BackgroundImage = global::WorkLogForm.Properties.Resources.左箭头;
+            this.calendar_ovalShape_left.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.calendar_ovalShape_left.BorderColor = System.Drawing.Color.Transparent;
+            this.calendar_ovalShape_left.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.calendar_ovalShape_left.Location = new System.Drawing.Point(19, 16);
+            this.calendar_ovalShape_left.Name = "calendar_ovalShape_left";
+            this.calendar_ovalShape_left.Size = new System.Drawing.Size(25, 25);
+            // 
+            // panel_top
+            // 
+            this.panel_top.BackColor = System.Drawing.Color.Transparent;
+            this.panel_top.BackgroundImage = global::WorkLogForm.Properties.Resources.logo2;
+            this.panel_top.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_top.Controls.Add(this.shapeContainer2);
+            this.panel_top.Location = new System.Drawing.Point(11, 9);
+            this.panel_top.Name = "panel_top";
+            this.panel_top.Size = new System.Drawing.Size(1009, 105);
+            this.panel_top.TabIndex = 4;
+            // 
+            // shapeContainer2
+            // 
+            this.shapeContainer2.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer2.Name = "shapeContainer2";
+            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape41,
+            this.rectangleShape40,
+            this.rectangleShape39,
+            this.rectangleShape38,
+            this.rectangleShape37,
+            this.rectangleShape36,
+            this.rectangleShape35});
+            this.shapeContainer2.Size = new System.Drawing.Size(1009, 105);
+            this.shapeContainer2.TabIndex = 0;
+            this.shapeContainer2.TabStop = false;
+            // 
+            // rectangleShape41
+            // 
+            this.rectangleShape41.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape41.BackgroundImage")));
+            this.rectangleShape41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape41.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape41.Location = new System.Drawing.Point(882, 118);
+            this.rectangleShape41.Name = "rectangleShape41";
+            this.rectangleShape41.Size = new System.Drawing.Size(110, 75);
+            // 
+            // rectangleShape40
+            // 
+            this.rectangleShape40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape40.BackgroundImage")));
+            this.rectangleShape40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape40.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape40.Location = new System.Drawing.Point(772, 118);
+            this.rectangleShape40.Name = "rectangleShape40";
+            this.rectangleShape40.Size = new System.Drawing.Size(110, 75);
+            // 
+            // rectangleShape39
+            // 
+            this.rectangleShape39.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape39.BackgroundImage")));
+            this.rectangleShape39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape39.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape39.Location = new System.Drawing.Point(662, 118);
+            this.rectangleShape39.Name = "rectangleShape39";
+            this.rectangleShape39.Size = new System.Drawing.Size(110, 75);
+            // 
+            // rectangleShape38
+            // 
+            this.rectangleShape38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape38.BackgroundImage")));
+            this.rectangleShape38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape38.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape38.Location = new System.Drawing.Point(552, 118);
+            this.rectangleShape38.Name = "rectangleShape38";
+            this.rectangleShape38.Size = new System.Drawing.Size(110, 75);
+            // 
+            // rectangleShape37
+            // 
+            this.rectangleShape37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape37.BackgroundImage")));
+            this.rectangleShape37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape37.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape37.Location = new System.Drawing.Point(442, 118);
+            this.rectangleShape37.Name = "rectangleShape37";
+            this.rectangleShape37.Size = new System.Drawing.Size(110, 75);
+            // 
+            // rectangleShape36
+            // 
+            this.rectangleShape36.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape36.BackgroundImage")));
+            this.rectangleShape36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape36.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape36.Location = new System.Drawing.Point(332, 118);
+            this.rectangleShape36.Name = "rectangleShape36";
+            this.rectangleShape36.Size = new System.Drawing.Size(110, 75);
+            // 
+            // rectangleShape35
+            // 
+            this.rectangleShape35.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape35.BackgroundImage")));
+            this.rectangleShape35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape35.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rectangleShape35.Location = new System.Drawing.Point(222, 118);
+            this.rectangleShape35.Name = "rectangleShape35";
+            this.rectangleShape35.Size = new System.Drawing.Size(110, 75);
+            // 
+            // expandablePanel1
+            // 
+            this.expandablePanel1.CanvasColor = System.Drawing.SystemColors.Control;
+            this.expandablePanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.expandablePanel1.Location = new System.Drawing.Point(21, 182);
+            this.expandablePanel1.Name = "expandablePanel1";
+            this.expandablePanel1.Size = new System.Drawing.Size(184, 100);
+            this.expandablePanel1.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.expandablePanel1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.expandablePanel1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.expandablePanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.expandablePanel1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.expandablePanel1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
+            this.expandablePanel1.Style.GradientAngle = 90;
+            this.expandablePanel1.TabIndex = 0;
+            this.expandablePanel1.TitleStyle.Alignment = System.Drawing.StringAlignment.Center;
+            this.expandablePanel1.TitleStyle.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.expandablePanel1.TitleStyle.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.expandablePanel1.TitleStyle.Border = DevComponents.DotNetBar.eBorderType.RaisedInner;
+            this.expandablePanel1.TitleStyle.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.expandablePanel1.TitleStyle.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.expandablePanel1.TitleStyle.GradientAngle = 90;
+            this.expandablePanel1.TitleText = "Title Bar";
+            // 
+            // comboItem29
+            // 
+            this.comboItem29.Text = "十二月";
+            // 
+            // comboItem28
+            // 
+            this.comboItem28.Text = "十一月";
+            // 
+            // comboItem27
+            // 
+            this.comboItem27.Text = "十月";
+            // 
+            // comboItem26
+            // 
+            this.comboItem26.Text = "九月";
+            // 
+            // comboItem25
+            // 
+            this.comboItem25.Text = "八月";
+            // 
+            // comboItem24
+            // 
+            this.comboItem24.Text = "七月";
+            // 
+            // comboItem23
+            // 
+            this.comboItem23.Text = "六月";
+            // 
+            // comboItem22
+            // 
+            this.comboItem22.Text = "五月";
+            // 
+            // comboItem21
+            // 
+            this.comboItem21.Text = "四月";
+            // 
+            // comboItem20
+            // 
+            this.comboItem20.Text = "三月";
+            // 
+            // comboItem19
+            // 
+            this.comboItem19.Text = "二月";
+            // 
+            // comboItem18
+            // 
+            this.comboItem18.Text = "一月";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(303, 183);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 14);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "12";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(418, 98);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(14, 14);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "1";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(347, 204);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 12);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "11点吃午饭";
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(347, 223);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 12);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "11点吃午饭";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(253, 223);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 12);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "11点吃午饭";
+            // 
+            // shou_ye
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1030, 700);
+            this.Controls.Add(this.expandablePanel1);
+            this.Controls.Add(this.panel_top);
+            this.Controls.Add(this.panel_base);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Name = "shou_ye";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "首页";
+            this.Load += new System.EventHandler(this.shou_ye_Load);
+            this.panel_base.ResumeLayout(false);
+            this.panel_calendar.ResumeLayout(false);
+            this.panel_calendar.PerformLayout();
+            this.panel_top.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private DevComponents.Editors.ComboItem comboItem12;
+        private DevComponents.Editors.ComboItem comboItem11;
+        private DevComponents.Editors.ComboItem comboItem10;
+        private DevComponents.Editors.ComboItem comboItem9;
+        private DevComponents.Editors.ComboItem comboItem8;
+        private DevComponents.Editors.ComboItem comboItem7;
+        private DevComponents.Editors.ComboItem comboItem6;
+        private DevComponents.Editors.ComboItem comboItem5;
+        private DevComponents.Editors.ComboItem comboItem4;
+        private DevComponents.Editors.ComboItem comboItem3;
+        private DevComponents.Editors.ComboItem comboItem2;
+        private DevComponents.Editors.ComboItem comboItem1;
+        private DevComponents.Editors.ComboItem comboItem17;
+        private DevComponents.Editors.ComboItem comboItem16;
+        private DevComponents.Editors.ComboItem comboItem15;
+        private DevComponents.Editors.ComboItem comboItem14;
+        private DevComponents.Editors.ComboItem comboItem13;
+        private System.Windows.Forms.Panel panel_base;
+        private System.Windows.Forms.Panel panel_right;
+        private System.Windows.Forms.Panel panel_top;
+        private DevComponents.DotNetBar.ExpandablePanel expandablePanel1;
+        private System.Windows.Forms.Panel panel_calendar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label saturday;
+        private System.Windows.Forms.Label friday;
+        private System.Windows.Forms.Label thursday;
+        private System.Windows.Forms.Label wednesday;
+        private System.Windows.Forms.Label tuesday;
+        private System.Windows.Forms.Label monday;
+        private System.Windows.Forms.Label sunday;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx year_comboBoxEx;
+        private DevComponents.Editors.ComboItem comboItem30;
+        private DevComponents.Editors.ComboItem comboItem31;
+        private DevComponents.Editors.ComboItem comboItem32;
+        private DevComponents.Editors.ComboItem comboItem33;
+        private DevComponents.Editors.ComboItem comboItem34;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape34;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape33;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape32;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape31;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape30;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape29;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape28;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape27;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape26;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape25;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape24;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape23;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape22;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape21;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape20;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape19;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape18;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape17;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape16;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape15;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape14;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape13;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape12;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape11;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape10;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape9;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape8;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape7;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape6;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape5;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape4;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape3;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape0_1;
+        private Microsoft.VisualBasic.PowerPacks.OvalShape calendar_ovalShape_right;
+        private Microsoft.VisualBasic.PowerPacks.OvalShape calendar_ovalShape_left;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape41;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape40;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape39;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape38;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape37;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape36;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape35;
+        private DevComponents.Editors.ComboItem comboItem29;
+        private DevComponents.Editors.ComboItem comboItem28;
+        private DevComponents.Editors.ComboItem comboItem27;
+        private DevComponents.Editors.ComboItem comboItem26;
+        private DevComponents.Editors.ComboItem comboItem25;
+        private DevComponents.Editors.ComboItem comboItem24;
+        private DevComponents.Editors.ComboItem comboItem23;
+        private DevComponents.Editors.ComboItem comboItem22;
+        private DevComponents.Editors.ComboItem comboItem21;
+        private DevComponents.Editors.ComboItem comboItem20;
+        private DevComponents.Editors.ComboItem comboItem19;
+        private DevComponents.Editors.ComboItem comboItem18;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx month_comboBoxEx;
+        private DevComponents.Editors.ComboItem comboItem35;
+        private DevComponents.Editors.ComboItem comboItem36;
+        private DevComponents.Editors.ComboItem comboItem37;
+        private DevComponents.Editors.ComboItem comboItem38;
+        private DevComponents.Editors.ComboItem comboItem39;
+        private DevComponents.Editors.ComboItem comboItem40;
+        private DevComponents.Editors.ComboItem comboItem41;
+        private DevComponents.Editors.ComboItem comboItem42;
+        private DevComponents.Editors.ComboItem comboItem43;
+        private DevComponents.Editors.ComboItem comboItem44;
+        private DevComponents.Editors.ComboItem comboItem45;
+        private DevComponents.Editors.ComboItem comboItem46;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ImageList imageList1;
+
+    }
+}

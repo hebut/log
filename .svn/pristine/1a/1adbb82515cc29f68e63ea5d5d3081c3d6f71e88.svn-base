@@ -1,0 +1,59 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WorkLogForm
+{
+    public partial class shou_ye : Form
+    {
+        public shou_ye()
+        {
+            InitializeComponent();
+        }
+
+        private void shou_ye_Load(object sender, EventArgs e)
+        {
+            month_comboBoxEx.SelectedIndex = 0;
+            year_comboBoxEx.SelectedIndex = 0;
+        }
+
+        private void calendar_panel2_3_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+        }
+
+        private void pictureBox46_Click(object sender, EventArgs e)
+        {
+            panel43.Visible = false;
+            panel44.Visible = true;
+            panel11.Visible = false;
+            panel45.Visible = false;
+        }
+
+        private void label48_Click(object sender, EventArgs e)
+        {
+            panel44.Visible = true;
+            panel11.Visible = false;
+            panel45.Visible = false;
+        }
+
+        private void label46_Click(object sender, EventArgs e)
+        {
+            panel44.Visible = false;
+            panel11.Visible = true;
+            panel45.Visible = false;
+        }
+
+        private void label50_Click(object sender, EventArgs e)
+        {
+            panel44.Visible = false;
+            panel11.Visible = false;
+            panel45.Visible = true;
+        }
+    }
+}

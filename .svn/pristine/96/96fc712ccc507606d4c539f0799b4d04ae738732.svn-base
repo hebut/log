@@ -1,0 +1,348 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WorkLogForm
+{
+    public partial class shou_ye : Form
+    {
+        public shou_ye()
+        {
+            InitializeComponent();
+        }
+
+        private void shou_ye_Load(object sender, EventArgs e)
+        {
+            month_comboBoxEx.SelectedIndex = 0;
+            year_comboBoxEx.SelectedIndex = 0;
+        }
+
+       
+        private void pictureBox46_Click(object sender, EventArgs e)
+        {
+            panel43.Visible = false;
+            panel44.Visible = true;
+            panel11.Visible = false;
+            panel45.Visible = false;
+        }
+
+        private void label48_Click(object sender, EventArgs e)
+        {
+            panel44.Visible = true;
+            panel11.Visible = false;
+            panel45.Visible = false;
+        }
+
+        private void label46_Click(object sender, EventArgs e)
+        {
+            panel44.Visible = false;
+            panel11.Visible = true;
+            panel45.Visible = false;
+        }
+
+        private void label50_Click(object sender, EventArgs e)
+        {
+            panel44.Visible = false;
+            panel11.Visible = false;
+            panel45.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //WorkLogForm.Connection.Connection connection = new Connection.Connection();
+            //String title = this.textBox1.Text.Trim();
+            //String content = this.textBox3.Text.Trim();
+            //ClassLibrary.AttenceLog al = new ClassLibrary.AttenceLog();
+            //al.LAL_LOG = content;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.textBox1.Text = "";
+            this.textBox3.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.textBox2.Text = "";
+            this.textBox4.Text = "";
+            if (checkBox1.Checked == true) 
+            {
+                checkBox1.Checked = false;
+            }
+            if(comboBoxEx1.SelectedItem != null)
+                comboBoxEx1.SelectedItem = null;
+            if(comboBoxEx2.SelectedItem != null)
+                comboBoxEx2.SelectedItem = null;
+        }
+
+        private void panel1_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(125, 71);
+        }
+
+        private void panel3_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(455, 71);
+        }
+
+       
+        private void panel7_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(417, 71);
+        }
+
+        private void panel5_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(307, 71);
+        }
+
+        private void panel6_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(545, 71);
+        }
+
+        private void panel4_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(345, 71);
+        }
+
+        private void panel2_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(235, 71);
+        }
+
+        private void panel14_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(125, 150);
+        }
+
+        private void panel13_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(235, 150);
+        }
+
+        private void panel12_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(345, 150);
+        }
+
+        private void calendar_panel2_3_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(455, 150);
+        }
+
+        private void panel10_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(545, 150);
+        }
+
+        private void panel9_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(307, 150);
+        }
+
+        private void panel8_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(417, 150);
+        }
+
+        private void panel21_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(125, 225);
+        }
+
+        private void panel20_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(235, 225);
+        }
+
+        private void panel19_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(345, 225);
+        }
+
+        private void panel18_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(455, 225);
+        }
+
+        private void panel17_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(535, 225);
+        }
+
+        private void panel16_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(307, 225);
+        }
+
+        private void panel15_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(417, 225);
+        }
+
+        private void panel28_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(125, 300);
+        }
+
+        private void panel27_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(235, 300);
+        }
+
+        private void panel26_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(345, 300);
+        }
+
+        private void panel25_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(455, 300);
+        }
+
+        private void panel24_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(545, 300);
+        }
+
+        private void panel23_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(307, 300);
+        }
+
+        private void panel22_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(417, 300);
+        }
+
+        private void panel35_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(125, 235);
+        }
+
+        private void panel34_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(235, 235);
+        }
+
+        private void panel33_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(345, 235);
+        }
+
+        private void panel32_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(455, 235);
+        }
+
+        private void panel31_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(545, 235);
+        }
+
+        private void panel30_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(307, 235);
+        }
+
+        private void panel29_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(417, 235);
+        }
+
+        private void panel42_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(125, 305);
+        }
+
+        private void panel41_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(235, 305);
+        }
+
+        private void panel40_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(345, 305);
+        }
+
+        private void panel39_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(455, 305);
+        }
+
+        private void panel38_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(545, 305);
+        }
+
+        private void panel37_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(307, 305);
+        }
+
+        private void panel36_DoubleClick(object sender, EventArgs e)
+        {
+            panel43.Visible = true;
+            panel43.Location = new Point(417, 305);
+        }
+
+
+     
+
+       
+
+        
+
+      
+        
+    }
+}

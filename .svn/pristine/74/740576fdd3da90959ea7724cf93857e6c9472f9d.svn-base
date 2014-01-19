@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ClassLibrary
+{
+    public class IEntity
+    {
+        #region 成员
+        private long id;
+        #endregion
+
+        #region 属性
+        public virtual long Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        #endregion
+        
+    }
+}

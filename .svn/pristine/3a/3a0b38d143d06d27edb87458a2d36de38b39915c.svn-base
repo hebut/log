@@ -1,0 +1,185 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using ClassLibrary;
+
+namespace WorkLogForm
+{
+    public partial class index : Form
+    {
+        public index()
+        {
+            InitializeComponent();
+        }
+
+
+
+        private void pictureBox40_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox40.BackgroundImage = WorkLogForm.Properties.Resources.申请请假_副本;
+        }
+
+        private void pictureBox40_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox40.BackgroundImage = WorkLogForm.Properties.Resources.申请请假;
+        }
+
+        private void pictureBox41_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox41.BackgroundImage = WorkLogForm.Properties.Resources.查看考勤_副本;
+        }
+
+        private void pictureBox41_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox41.BackgroundImage = WorkLogForm.Properties.Resources.查看考勤;
+        }
+
+        private void pictureBox42_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox42.BackgroundImage = WorkLogForm.Properties.Resources.请假审批_副本;
+        }
+
+        private void pictureBox42_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox42.BackgroundImage = WorkLogForm.Properties.Resources.请假审批;
+        }
+
+        private void pictureBox43_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox43.BackgroundImage = WorkLogForm.Properties.Resources.领导代签_副本;
+        }
+
+        private void pictureBox43_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox43.BackgroundImage = WorkLogForm.Properties.Resources.领导代签;
+        }
+
+        private void pictureBox44_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox44.BackgroundImage = WorkLogForm.Properties.Resources.指定临时负责人_副本;
+        }
+
+        private void pictureBox44_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox44.BackgroundImage = WorkLogForm.Properties.Resources.指定临时负责人9;
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox1.BackgroundImage = WorkLogForm.Properties.Resources.左翻页_副本;
+        }
+
+        private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox2.BackgroundImage = WorkLogForm.Properties.Resources.右翻页_副本;
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox2.BackgroundImage = WorkLogForm.Properties.Resources.右翻页;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BackgroundImage = WorkLogForm.Properties.Resources.左翻页;
+        }
+        private void pictureBox40_Click(object sender, EventArgs e)
+        {
+            Application1 f = new Application1();
+            f.ShowDialog();
+            
+            
+        }
+
+        private void pictureBox41_Click(object sender, EventArgs e)
+        {
+            view f = new view();
+            f.ShowDialog();
+        }
+
+        private void pictureBox43_Click(object sender, EventArgs e)
+        {
+            Leaderssign f = new Leaderssign();
+            f.ShowDialog();
+        }
+
+        private void pictureBox44_Click(object sender, EventArgs e)
+        {
+            Principal f = new Principal();
+            f.ShowDialog();
+        }
+
+        private void pictureBox42_Click(object sender, EventArgs e)
+        {
+            leaveAudit f = new leaveAudit();
+            f.ShowDialog();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            panel38.Visible = true;
+            panel37.Visible = false;
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            panel38.Visible = false;
+            panel37.Visible = true;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            if (panel36.Visible == true)
+            {
+                panel36.Visible = false;
+            }
+            else
+                panel36.Visible = true;
+            Course newUser = new Course();
+            //newUser.Id = 33;
+            //newUser.CourseID = 1;
+            //newUser.CourseName = "abc123";
+            //DateTime now=DateTime.Now;
+            //newUser.DataCreated = now;
+            Service.BaseService baseService = new Service.BaseService();
+            baseService.loadEntity(newUser,33);
+            newUser.CourseID = 1;
+        }
+
+        private void pictureBox46_Click(object sender, EventArgs e)
+        {
+            panel36.Visible = false;
+        }
+
+        private void pictureBox47_Click(object sender, EventArgs e)
+        {
+            statistics f = new statistics();
+            f.ShowDialog();
+        }
+
+        private void pictureBox48_Click(object sender, EventArgs e)
+        {
+            logView f = new logView();
+            f.ShowDialog();
+        }
+
+      
+       
+
+       
+
+      
+
+     
+       
+      
+
+        
+      
+    }
+}
